@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://cwd7ej64nrs6g"]
+
+[ext_resource type="Script" path="res://menuAndButton/buttonBase.gd" id="1_2vrk5"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_b13yr"]
+size = Vector3(2.8, 2.365, 4.6)
+
+[node name="Button" type="Area3D"]
+collision_layer = 8
+collision_mask = 0
+script = ExtResource("1_2vrk5")
+
+[node name="collision" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("BoxShape3D_b13yr")
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]

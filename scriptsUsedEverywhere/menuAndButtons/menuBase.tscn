@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://dgd6tgy5vlrq0"]
+
+[ext_resource type="Script" path="res://menuAndButton/menuBase.gd" id="1_bpk52"]
+
+[sub_resource type="Environment" id="Environment_cfedt"]
+background_energy_multiplier = 1.6
+
+[node name="menu" type="Node3D"]
+script = ExtResource("1_bpk52")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+
+[node name="buttons" type="Node3D" parent="."]
+transform = Transform3D(-3.49691e-08, 0, -0.8, 0, 0.8, 0, 0.8, 0, -3.49691e-08, 0, 0, -6.11)
+
+[node name="menuEnviroment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_cfedt")
