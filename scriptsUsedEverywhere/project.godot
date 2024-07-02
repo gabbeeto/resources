@@ -1,0 +1,25 @@
+
+
+; After Autoload
+
+[debug]
+
+gdscript/warnings/untyped_declaration=2
+gdscript/warnings/unsafe_cast=1
+
+[display]
+
+window/size/viewport_width=960
+window/size/viewport_height=540
+window/size/mode=2
+window/stretch/mode="viewport"
+
+[filesystem]
+
+import/blender/enabled=false
+
+; After Input
+
+3d_physics/layer_1="player"
+3d_physics/layer_2="enemies"
+3d_physics/layer_3="objects"
